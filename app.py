@@ -153,10 +153,9 @@ st.title('Sentimental Analysis App')
 st.write('This is an AI webapp that detects the sentiments behind movie reviews. It has two possible outcomes: Positive review or Negative review')
 image = Image.open('sentimental.jpg')
 st.image(image, use_column_width=True)
-st.write(
-    'Please enter your movie review below')
 
-sentiment = st.text_input('Enter Your Movie Review', 'Type Here')
+
+sentiment = st.text_input('Enter your movie review below', 'Type Here')
 
 button = st.button('Submit')
 output =  predict(loaded, sentiment)
