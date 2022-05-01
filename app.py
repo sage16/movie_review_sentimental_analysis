@@ -155,7 +155,7 @@ image = Image.open('sentimental.jpg')
 st.image(image, use_column_width=True)
 
 
-sentiment = st.text_input('Enter your movie review below', 'Type Here')
+sentiment = st.text_input('Enter a movie review below', 'Type Here')
 
 button = st.button('Submit')
 output =  predict(loaded, sentiment)
